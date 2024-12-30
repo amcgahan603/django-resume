@@ -570,8 +570,16 @@ progress {
 }
 
 .list-inline-item {
-  display: inline-block;
+  display: inline-flex;
 }
+
+.list-inline-item-caption {
+  display: inline-flex;
+  padding-left: 1rem;
+  vertical-align: baseline;
+  font-size: 10px;
+}
+
 .list-inline-item:not(:last-child) {
   margin-right: 0.5rem;
 }
@@ -5581,7 +5589,7 @@ textarea.form-control-lg {
 }
 .bs-tooltip-top .tooltip-arrow::before, .bs-tooltip-auto[data-popper-placement^=top] .tooltip-arrow::before {
   top: -1px;
-  border-width: var(--bs-tooltip-arrow-height) calc(var(--bs-tooltip-arrow-width) * 0.5) 0;
+  border-width: var(--bs--arrow-height) calc(var(--bs-tooltip-arrow-width) * 0.5) 0;
   border-top-color: var(--bs-tooltip-bg);
 }
 
@@ -10951,7 +10959,7 @@ section.resume-section {
   padding-right: 1rem;
   padding-top: 5rem;
   padding-bottom: 5rem;
-  max-width: 75rem;
+  max-width: 100%;
 }
 section.resume-section .resume-section-content {
   width: 100%;
